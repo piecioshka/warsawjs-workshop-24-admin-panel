@@ -27,7 +27,7 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 4. Zbudować polecenia: `npm run start:back-end`,
 5. Uruchomić serwer aplikacyjno-bazodanowy
 
-### :right_arrow: Aplikacja
+### :arrow_right: Aplikacja
 
 1. Wygenerowanie konfiguracji dla `Jest`-a
 
@@ -71,7 +71,7 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 * Skonfigurować projekt
 * Dodać badge do `README.md` projektu
 
-### :right_arrow: Aplikacja, część 2
+### :arrow_right: Aplikacja, część 2
 
 * Napisać test, który będzie weryfikować komponent do prezentcji
     + Zamockować DOM za pomocą `npm/jsdom`, przykład:
@@ -116,7 +116,7 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
     }
     ```
 
-### :right_arrow: Aplikacja, cześć 3
+### :arrow_right: Aplikacja, cześć 3
 
 * Napisać test, który będzie weryfikować model
 * Napisać wcześniej wspomniany model

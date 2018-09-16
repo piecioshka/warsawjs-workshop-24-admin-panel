@@ -40,7 +40,7 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
     ```bash
     npm i -D @babel/core @babel/plugin-proposal-class-properties \
         @babel/plugin-transform-runtime @babel/preset-env \
-        @babel/runtime babel-core \
+        @babel/runtime babel-core@^7.0.0-bridge.0 \
         babel-eslint babel-jest \
         babel-loader eslint eslint-config-piecioshka \
         jest-cli jsdom json-server node-fetch regenerator-runtime \

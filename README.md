@@ -21,18 +21,13 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 ### Baza danych
 
 1. Zainstalować `npm/json-server`
-2. Wygenerować danych za pomocą schemy:
+2. Wejść na generator `JSON Schema faker`
+3. Wygenerować dane za pomocą schemy:
     + <https://gist.github.com/piecioshka/b071e2d53a1115527ab5a5b21765bed3>
-3. Zbudować polecenia: `npm run start:back-end`,
-4. Uruchomić serwer bazodanowy
+4. Zbudować polecenia: `npm run start:back-end`,
+5. Uruchomić serwer aplikacyjno-bazodanowy
 
-### Continuous Integration
-
-1. Zalogować sie do Semaphore CI za pomocą GitHuba
-2. Skonfigurować projekt
-3. Dodać badge do `README.md` projektu
-
-### Napisać aplikację (zgodnie z metodologią "test first")
+### Aplikacja
 
 1. Wygenerowanie konfiguracji dla `Jest`-a
 
@@ -43,7 +38,13 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 2. Integracja z `Babel.js`
 
     ```bash
-    npm i -D babel-jest regenerator-runtime @babel/preset-env @babel/core babel-core@^7.0.0-bridge.0
+    npm i -D @babel/core @babel/plugin-proposal-class-properties \
+        @babel/plugin-transform-runtime @babel/preset-env \
+        @babel/runtime babel-core \
+        babel-eslint babel-jest \
+        babel-loader eslint eslint-config-piecioshka \
+        jest-cli jsdom json-server node-fetch regenerator-runtime \
+        webpack webpack-cli
     ```
 
 3. Stworzyć plik `.babelrc` o zawartości:
@@ -51,19 +52,33 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
     ```json
     {
         "presets": [
-            "env"
+            "@babel/preset-env"
+        ],
+        "plugins": [
+            "@babel/plugin-proposal-class-properties",
+            "@babel/plugin-transform-runtime"
         ]
     }
+
     ```
 
 4. Napisać test, który będzie weryfikować serwis do pobierania danych z serwera
 5. Napisać wcześniej wspomniany serwis
-6. Napisać test, który będzie weryfikować komponent do prezentcji
+
+### Continuous Integration
+
+1. Zalogować sie do Semaphore CI za pomocą GitHuba
+2. Skonfigurować projekt
+3. Dodać badge do `README.md` projektu
+
+### Aplikacja, część 2
+
+* Napisać test, który będzie weryfikować komponent do prezentcji
     + Zamockować DOM za pomocą `npm/jsdom`
-7. Napisać wcześniej wspomniany komponent
-8. Napisać test, który będzie weryfikować model
-9. Napisać wcześniej wspomniany model
-10. Stworzyć stronę DEMO, gdzie osadzić uprzednio stworzony komponent
+* Napisać wcześniej wspomniany komponent
+* Napisać test, który będzie weryfikować model
+* Napisać wcześniej wspomniany model
+* Stworzyć stronę DEMO, gdzie osadzić uprzednio stworzony komponent
     + Stowrzyć plik `front-end/main.js`, który połączy wszystkie 3 moduły
     + Wykorzystać `Webpacka` do zbudowania pliku `dist/bundle.js`
 

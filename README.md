@@ -78,6 +78,27 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 * Napisać wcześniej wspomniany komponent
 * Napisać test, który będzie weryfikować model
 * Napisać wcześniej wspomniany model
+
+## Konfiguracja Webpacka
+
+* Zbudować polecenie: `start:front-end`
+
+    ```text
+    "webpack -w front-end/scripts/main.js -o front-end/dist/bundle.js --mode development",
+    ```
+
+* Dodać plik z konfiguracją Webpacka:
+
+    ```js
+    module.exports = {
+        module: {
+            rules: [
+                { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+            ]
+        }
+    }
+    ```
+
 * Stworzyć stronę DEMO, gdzie osadzić uprzednio stworzony komponent
     + Stowrzyć plik `front-end/main.js`, który połączy wszystkie 3 moduły
     + Wykorzystać `Webpacka` do zbudowania pliku `dist/bundle.js`

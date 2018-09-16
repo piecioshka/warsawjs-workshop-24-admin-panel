@@ -65,11 +65,11 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 4. Napisać test, który będzie weryfikować serwis do pobierania danych z serwera
 5. Napisać wcześniej wspomniany serwis
 
-### Continuous Integration
+### :star: Continuous Integration
 
-1. Zalogować sie do Semaphore CI za pomocą GitHuba
-2. Skonfigurować projekt
-3. Dodać badge do `README.md` projektu
+* Zalogować sie do Semaphore CI za pomocą GitHuba
+* Skonfigurować projekt
+* Dodać badge do `README.md` projektu
 
 ### Aplikacja, część 2
 
@@ -91,10 +91,8 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
         ```
 
 * Napisać wcześniej wspomniany komponent
-* Napisać test, który będzie weryfikować model
-* Napisać wcześniej wspomniany model
 
-## Konfiguracja Webpacka
+## :star: Konfiguracja Webpacka
 
 * Zbudować polecenie: `start:front-end`
 
@@ -108,7 +106,8 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
     module.exports = {
         module: {
             rules: [
-                { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+                { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
+                { test: /\.json$/, exclude: /node_modules/, loader: "json-loader" }
             ]
         }
     }
@@ -117,6 +116,11 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 * Stworzyć stronę DEMO, gdzie osadzić uprzednio stworzony komponent
     + Stowrzyć plik `front-end/main.js`, który połączy wszystkie 3 moduły
     + Wykorzystać `Webpacka` do zbudowania pliku `dist/bundle.js`
+
+### Aplikacja, cześć 3
+
+* Napisać test, który będzie weryfikować model
+* Napisać wcześniej wspomniany model
 
 ## Problemy do rozwiązania
 

@@ -74,7 +74,22 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 ### Aplikacja, część 2
 
 * Napisać test, który będzie weryfikować komponent do prezentcji
-    + Zamockować DOM za pomocą `npm/jsdom`
+    + Zamockować DOM za pomocą `npm/jsdom`, przykład:
+
+        ```js
+        import { JSDOM } from 'jsdom';
+
+        beforeAll(() => {
+            global.window = new JSDOM().window;
+            global.document = window.document;
+        });
+
+        afterAll(() => {
+            global.window = null;
+            global.document = null;
+        });
+        ```
+
 * Napisać wcześniej wspomniany komponent
 * Napisać test, który będzie weryfikować model
 * Napisać wcześniej wspomniany model

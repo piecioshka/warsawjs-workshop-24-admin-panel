@@ -27,7 +27,7 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 4. Zbudować polecenia: `npm run start:back-end`,
 5. Uruchomić serwer aplikacyjno-bazodanowy
 
-### Aplikacja
+### :right_arrow: Aplikacja
 
 1. Wygenerowanie konfiguracji dla `Jest`-a
 
@@ -71,7 +71,7 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 * Skonfigurować projekt
 * Dodać badge do `README.md` projektu
 
-### Aplikacja, część 2
+### :right_arrow: Aplikacja, część 2
 
 * Napisać test, który będzie weryfikować komponent do prezentcji
     + Zamockować DOM za pomocą `npm/jsdom`, przykład:
@@ -91,8 +91,11 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
         ```
 
 * Napisać wcześniej wspomniany komponent
+* Stworzyć stronę DEMO, gdzie osadzić uprzednio stworzony komponent
+    + Stowrzyć plik `front-end/main.js`, który połączy wszystkie 3 moduły
+    + Wykorzystać `Webpacka` do zbudowania pliku `dist/bundle.js`
 
-## :star: Konfiguracja Webpacka
+### :star: Konfiguracja Webpacka
 
 * Zbudować polecenie: `start:front-end`
 
@@ -113,14 +116,16 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
     }
     ```
 
-* Stworzyć stronę DEMO, gdzie osadzić uprzednio stworzony komponent
-    + Stowrzyć plik `front-end/main.js`, który połączy wszystkie 3 moduły
-    + Wykorzystać `Webpacka` do zbudowania pliku `dist/bundle.js`
-
-### Aplikacja, cześć 3
+### :right_arrow: Aplikacja, cześć 3
 
 * Napisać test, który będzie weryfikować model
 * Napisać wcześniej wspomniany model
+* Napisać testy do weryfikujące, czy:
+    + model komunikuje się z komponentem
+    + komponent komunikuje się z serwisem
+    + serwis umożliwia stworzenie listy modeli
+
+---
 
 ## Problemy do rozwiązania
 

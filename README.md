@@ -16,7 +16,7 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 * <https://github.com/DavidAnson/markdownlint>
 * <https://github.com/typicode/json-server>
 
-## Krok po kroku
+## Krok po kroku 👣
 
 ### Baza danych
 

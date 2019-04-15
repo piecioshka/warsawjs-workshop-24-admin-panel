@@ -6,6 +6,11 @@
 
 WarsawJS Workshop #24: Projekt panelu administracyjnego
 
+## Event in social media
+
+* <https://www.facebook.com/events/1865649110402869/>
+    + `WarsawJS Workshop #24 - Testowanie kodu 3/3: Testy integracyjne`
+
 ## Wykorzystywane narzędzia
 
 * <https://webpack.js.org/>

@@ -1,5 +1,5 @@
 module.exports = {
-    parser: "babel-eslint",
+    parser: 'babel-eslint',
 
     extends: 'piecioshka',
 
@@ -18,6 +18,12 @@ module.exports = {
 
     // http://eslint.org/docs/rules/
     rules: {
+        'no-console': 'off',
+        'no-magic-numbers': ['error', {
+            ignore: [-1, 0, 1, 2]
+        }],
+        'require-jsdoc': 'off',
+        'sort-imports': 'off',
         'arrow-parens': 'off'
     },
 
@@ -29,6 +35,6 @@ module.exports = {
         ecmaVersion: 2018,
 
         // Support syntax ES2015 Import/Export
-        sourceType: "module"
+        sourceType: 'module'
     }
 };

@@ -5,7 +5,10 @@ test('is exist', () => {
 });
 
 test('support get* functions', () => {
-    const m = new Model({ name: 'nnn', description: 'dddd' });
+    const m = new Model({
+        name: 'nnn',
+        description: 'dddd'
+    });
     expect(typeof m.getName).toBe('function');
     expect(typeof m.getDescription).toBe('function');
 });

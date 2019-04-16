@@ -13,7 +13,7 @@ export class ProductsComponent {
             const $product = document.createElement('div');
             $product.classList.add('float-left');
             $product.classList.add('m-1');
-            $product.style.width = `300px`;
+            $product.style.width = '300px';
             $product.innerHTML = `
                 <div class="card">
                     <img class="card-img-top" src="${product.image}" alt="Card image cap">
@@ -30,7 +30,7 @@ export class ProductsComponent {
     render() {
         [...this.$el.children].forEach(
             this.$place.appendChild.bind(this.$place)
-        )
+        );
     }
 
 }

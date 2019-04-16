@@ -28,12 +28,15 @@ test('DOM', () => {
     expect($place.children.length).toBe(0);
 });
 
-test('i can see prodcuts', () => {
-    const productFactory = (name) => new Product({ name });
+test('i can see products', () => {
+    function productFactory(name) {
+        return new Product({ name });
+    }
+
     const products = [
         productFactory('one'),
         productFactory('two'),
-        productFactory('thrrre'),
+        productFactory('thrrre')
     ];
     const $place = document.createElement('div');
     const c = new C($place, products);

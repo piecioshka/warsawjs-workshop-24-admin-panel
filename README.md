@@ -97,7 +97,7 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 
 * Napisać wcześniej wspomniany komponent
 * Stworzyć stronę DEMO, gdzie osadzić uprzednio stworzony komponent
-    + Stowrzyć plik `front-end/main.js`, który połączy wszystkie 3 moduły
+    + Stworzyć plik `front-end/main.js`, który połączy wszystkie 3 moduły
     + Wykorzystać `Webpacka` do zbudowania pliku `dist/bundle.js`
 
 ### :star: Konfiguracja Webpacka
@@ -132,7 +132,7 @@ WarsawJS Workshop #24: Projekt panelu administracyjnego
 
 ---
 
-## Problemy do rozwiązania
+## :warning: Problemy do rozwiązania
 
 * Usunięcie parametryzacji funkcji utilsowych
 * Agregacja funkcji utilsowych to jednego pliku

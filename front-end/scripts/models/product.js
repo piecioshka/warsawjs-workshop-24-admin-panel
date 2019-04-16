@@ -1,4 +1,10 @@
+const NAME_LENGTH = 20;
+const DESCRIPTION_LENGTH = 30;
+
 export class Product {
+
+    name = null;
+    description = null;
 
     constructor(options) {
         Object.keys(options).forEach((property) => {
@@ -7,12 +13,12 @@ export class Product {
     }
 
     getName() {
-        return this.name.slice(0, 20);
+        return this.name.slice(0, NAME_LENGTH);
     }
 
     getDescription() {
         const description = this.description || '';
-        return description.slice(0, 30);
+        return description.slice(0, DESCRIPTION_LENGTH);
     }
 
 }

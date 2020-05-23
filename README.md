@@ -3,7 +3,7 @@
 [![travis](https://img.shields.io/travis/piecioshka/warsawjs-workshop-24-admin-panel.svg)](https://travis-ci.org/piecioshka/warsawjs-workshop-24-admin-panel)
 [![Build Status](https://semaphoreci.com/api/v1/piecioshka/warsawjs-workshop-24-admin-panel/branches/master/badge.svg)](https://semaphoreci.com/piecioshka/warsawjs-workshop-24-admin-panel)
 
-⛩️ WarsawJS Workshop #24 — Integration Tests — Projekt panelu administracyjnego
+⛩️ WarsawJS Workshop #24 — Integration Tests
 
 ## Event in social media
 
